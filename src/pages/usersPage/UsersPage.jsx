@@ -37,9 +37,7 @@ export function UsersPage() {
         setDeletedUserId(null);
     }
 
-    function createUser() {
-        openModal();
-    }
+
 
     const {register,
            handleSubmit,
@@ -56,6 +54,7 @@ export function UsersPage() {
         console.log(values)
         reset()
         postUsers(values)
+        openModal();
         setUpdate(!update)
     }
 
@@ -70,20 +69,18 @@ export function UsersPage() {
 
 
 
-    async function updateUser(id, newUser){
+    async function updateUser(id, values){
         const response = await fetch(`http://localhost:8000/users/${id}`, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(newUser),
+            body: JSON.stringify(values),
         })
             setUpdate(!update)
+        reset()
     }
 
-    function updateClick(id){
-        handleSubmit((data) => updateUser(id, data))()
-    }
 
     return (
         <div>
@@ -95,7 +92,7 @@ export function UsersPage() {
                 <input type="text" placeholder="username" {...register('username')}/>
                 <input type="text" placeholder="email" {...register('email')}/>
                 <input type="text" placeholder="website" {...register('website')}/>
-                <button onClick={createUser}>create user</button>
+                <button>create user</button>
                 {showModal && (
                     <div className="modal">
                         <div className="modal-content">
@@ -133,7 +130,7 @@ export function UsersPage() {
                                             </div>
                                         </div>
                                     )}
-                                    <button onClick={() => updateClick(user.id)}>update</button>
+                                    <button onClick={handleSubmit((values) => updateUser(user.id, values))}>update</button>
                                 </td>
                             </tr>
                         ))}

@@ -42,16 +42,8 @@ tr:nth-child(even) {
 
 .close {
   color: white;
-  font-size: 28px;
-  font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .App-logo {
   height: 40vmin;

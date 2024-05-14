@@ -1,25 +1,11 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Leanne Grahams",
       "username": "Bret",
       "email": "Sincere@april.biz",
       "website": "hildegard.org"
-    },
-    {
-      "id": "629f",
-      "name": "hfh",
-      "username": "gfh",
-      "email": "hf",
-      "website": "hf"
-    },
-    {
-      "id": "8d79",
-      "name": "hfghgfhghg",
-      "username": "fghfghfghfgh",
-      "email": "fghfgh",
-      "website": "fghfgh"
     },
     {
       "name": "sez",
@@ -29,10 +15,10 @@
       "id": "d739"
     },
     {
-      "name": "sezim",
-      "username": "updated",
-      "email": "aman",
-      "website": "sdsadsd",
+      "name": "sd",
+      "username": "sd",
+      "email": "new",
+      "website": "df",
       "id": "af06"
     },
     {
@@ -44,17 +30,24 @@
     },
     {
       "id": "f089",
-      "name": "csc",
-      "username": "sc",
-      "email": "cs",
-      "website": "sc"
+      "name": "sez",
+      "username": "aman",
+      "email": "amangulovasezim@gmail.com",
+      "website": "newupdate"
     },
     {
-      "id": "4d0f",
-      "name": "csc",
-      "username": "csc",
-      "email": "sc",
-      "website": "cs"
+      "id": "dd1b",
+      "name": "sez",
+      "username": "sezim.amangulova@future-group.com",
+      "email": "amangulovasezim@gmail.com",
+      "website": "updated email"
+    },
+    {
+      "id": "2602",
+      "name": "flower",
+      "username": "girl",
+      "email": "update",
+      "website": "works"
     }
   ]
 }
